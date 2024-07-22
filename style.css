@@ -8,7 +8,7 @@
 }
 
 body, html{
-    width: auto;
+    width: 100vw;
     height: 100%;
 }
 
@@ -377,12 +377,14 @@ button.prev:hover, button.next:hover {
 }
 
 .iceBite img{
+    width: 100%;
     margin-bottom: -2.6rem;
 }
 
 .twoCards .card{
     min-height: 280px;
     flex-basis: calc(100% / 2);
+    overflow: hidden;
 }
 
 .twoCards .card img{
@@ -604,6 +606,7 @@ button.prev:hover, button.next:hover {
     position: relative;
 }
 .burger-image {
+    overflow: hidden;
     width: 30rem;
 }
 .label {
@@ -731,13 +734,14 @@ button.prev:hover, button.next:hover {
     flex-wrap: wrap;
 }
 .deliveryContainer .content .image-container {
+    width:100%;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .image-container img {
-    width: 150;
+    width: 100vw;
     max-width: 500px;
 }
 .text-container {
@@ -804,6 +808,7 @@ button.prev:hover, button.next:hover {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 .footer .top .subscribe-container input[type="email"] {
     padding: 10px;
@@ -1187,6 +1192,10 @@ button.prev:hover, button.next:hover {
 
     .footer .top {
         padding: 60px;
+    }
+
+    .footer .top .subscribe-container {
+        gap: 1rem;
     }
 
     .burgerContainer {
